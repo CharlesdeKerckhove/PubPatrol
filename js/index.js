@@ -7,6 +7,7 @@ var Longitude = undefined;
 // Get geo coordinates
  
 function getPlacesLocation() {
+    console.log("device ready");
     navigator.geolocation.getCurrentPosition
     (onPlacesSuccess, onPlacesError, { enableHighAccuracy: true });
 }
